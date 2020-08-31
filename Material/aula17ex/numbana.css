@@ -1,0 +1,30 @@
+body{ /* corpo */
+    background-color: rgb(35, 35, 148);
+    color: black;
+    font: normal 20pt Arial;
+}
+header{
+    text-align: center; /*alinhamento do texto*/
+    color:white;
+}
+section{
+    background-color: white;
+    border-radius: 10px; /*arrendodamento das bordas*/
+    padding: 15px;/* espaçamento dentro*/
+    width: 500px;/*largura fixa*/
+    margin: auto;/*centralizar element*/
+    text-align: center;/*centralizar texto*/
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.322);/*sobra do element*/
+}
+input#number{
+    width: 80px;
+}
+select{
+    height: 100px;
+    width: 130px;
+}
+footer{
+    text-align: center;
+    font-style: italic;
+    color: white;
+}

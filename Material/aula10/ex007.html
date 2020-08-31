@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Números</title>
+    <style>
+        body{
+            background-color:cornflowerblue;
+            color: white;
+            font:normal 20pt Arial;
+        }
+        h1{
+            color:red;        
+        }
+        p#presultado{
+            background-color:rgb(29, 228, 22);
+            color:black;
+        }
+        p#resultado{
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de Teste</h1>
+    <p>1º Número: <input type = "Number" id="n1" > </p>
+    <p>2º Número: <input type= "Number" id="n2"> </p>
+    <p><input type="button" onclick="clicar()" value="Confirma"></p>
+    <p id='presultado'>Resultado</p>
+    <p id='resultado'></p>
+    <script>
+        function clicar(){
+        var n1 = Number(window.document.getElementById("n1").value)
+        var n2 = Number(window.document.getElementById('n2').value)
+        var resultado = n1 + n2
+        window.document.getElementById('resultado').innerText = `O Resultado de ${n1} + ${n2} é ${resultado}`
+        }
+    </script>
+</body>
+</html>

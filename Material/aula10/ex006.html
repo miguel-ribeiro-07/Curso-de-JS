@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Dom</title>
+    <style>
+        div{
+            font: normal 20pt Arial;
+            background: rgb(48, 201, 48);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id= "area"> <!--onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()"-->
+        Interaja...
+    </div>
+    <script>
+        var local = window.document.getElementById("area") //seleciona o Elemento e insere na variável
+        local.addEventListener('mouseenter', entrar) //Quando o mouse entra no elemento
+        local.addEventListener('click', clicar)//Quando é feito um click rápido no elemento
+        local.addEventListener('mouseout', sair)//Quando o mouse sai do elemento
+        function entrar(){
+            local.innerText = "Entrou!"
+        }
+        function clicar(){
+            local.innerText = "Clicou!"
+            local.style.backgroundColor = "Red";
+        }
+        function sair(){
+            local.innerText = "Saiu!"
+            local.style.backgroundColor = "rgb(48, 201, 48)";
+        }
+    </script>
+</body>
+</html>

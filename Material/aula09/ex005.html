@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            background-color: rgb(55, 139, 218);
+            color: white;
+            font: normal 18pt Arial;
+        }
+        h1{
+            color:yellow;
+        }
+        div{
+            color:red;
+            background-color:black;
+        }
+    </style>
+</head>
+<body>
+    <h1> Iniciando estudos com DOM </h1>
+    <p>Usando Marca</p>
+    <p id="1">Usando ID</p>
+    <p name = "2">Usando Name</p>
+    <p class="3">Usando Class</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div>Resultados</div>
+    <script>
+        window.document.getElementsByTagName('p')[0].style.color="Green";
+        window.document.getElementById('1').style.color="Black";
+        window.document.getElementsByName('2')[0].style.color="Red";
+        window.document.getElementsByClassName('3')[0].style.color="Yellow"
+        window.document.getElementsByTagName('p')[4].innerText = "Acabei"
+    </script>
+</body>
+</html>

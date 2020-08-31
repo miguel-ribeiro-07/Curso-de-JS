@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verifyt Age</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header><h1>Verify Age</h1></header>
+   <section>
+       <div>
+           Year of Birth: <input type = "number" id = 'year'>
+        </div>
+       <div>
+           Sex
+           <input type="radio" name="option" checked>Male
+           <input type="radio" name="option" >Female
+        </div>
+        <input type="button" onclick="verify()" value = "Confirm">
+        <div>
+            <p id="result">Insert the data to generate a result</p>
+            <img src="" id="picture">
+            <p id="result2"></p>
+        </div>
+   </section>
+   <footer>&copy; Curso em Vídeo</footer>
+   <script src="script.js"></script>
+</body>
+</html>

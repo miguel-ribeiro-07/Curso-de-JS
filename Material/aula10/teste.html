@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+        div{
+            color: white;
+            background-color: rgb(40, 190, 40);
+            font: normal 18pt Arial;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="botão" onmouseenter="entrar()" onmouseout="sair()" onmousedown="press()" onmouseup="soltar()" onclick="clicar()"> Coloque o mouse </div>
+    <script>
+        var botão = window.document.getElementById("botão")
+        function entrar(){
+            botão.innerText = "Clique!"
+        }
+        function sair(){
+            botão.innerText = "Coloque o mouse"
+            botão.style.backgroundColor = "rgb(40, 190, 40)"
+        }
+        function press(){
+            botão.innerText = "Solte"
+            botão.style.backgroundColor = "red"
+        }
+        function soltar(){
+            botão.innerText= "Ufa!"
+        }
+        function clicar(){
+            botão.style.backgroundColor="Black"
+        }
+    </script>
+</body>
+</html>

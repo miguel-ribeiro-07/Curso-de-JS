@@ -1,0 +1,25 @@
+body{ /* corpo */
+    background-color: rgb(35, 35, 148);
+    color: white;
+    font: normal 20pt Arial;
+}
+header{
+    text-align: center; /*alinhamento do texto*/
+}
+section{
+    background-color: white;
+    border-radius: 10px; /*arrendodamento das bordas*/
+    padding: 15px;/* espaçamento dentro*/
+    width: 500px;/*largura fixa*/
+    margin: auto;/*centralizar element*/
+    text-align: center;/*centralizar texto*/
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.322);/*sobra do element*/
+}
+div#msg{
+    color: black;
+    font: normal 18pt Arial;
+}
+footer{
+    text-align: center;
+    font-style: italic;
+}
